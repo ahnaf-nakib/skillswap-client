@@ -1,4 +1,4 @@
-// src/routes/Routes.jsx (UPDATED)
+
 
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
@@ -9,7 +9,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import MyProfile from "../pages/MyProfile"; 
 import PrivateRoute from "./PrivateRoute"; 
 import UpdateProfile from "../pages/UpdateProfile";
-import SkillDetails from "../pages/SkillDetails"; // <-- ১. SkillDetails ইম্পোর্ট
+import SkillDetails from "../pages/SkillDetails"; 
 
 export const router = createBrowserRouter([
     {
@@ -49,10 +49,10 @@ export const router = createBrowserRouter([
                     </PrivateRoute>
                 )
             },
-            { // <-- ২. নতুন রাউটটি যোগ করো
-                path: "/skill/:id", // :id মানে হলো এটি ডাইনামিক
+            { 
+                path: "/skill/:id", 
                 element: (
-                    <PrivateRoute> {/* রিকোয়ারমেন্ট অনুযায়ী এটি প্রাইভেট */}
+                    <PrivateRoute> 
                         <SkillDetails />
                     </PrivateRoute>
                 )

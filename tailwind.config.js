@@ -1,4 +1,4 @@
-// tailwind.config.js (সঠিক কোড)
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,14 +10,14 @@ export default {
       extend: {},
     },
   
-    // --- এই অংশটি যোগ করা হয়েছে ---
+    
     plugins: [
       require('daisyui'),
     ],
   
-    // --- এই অংশটিও যোগ করা হয়েছে ---
+   
     daisyui: {
-      themes: ["light"], // এখানে আমরা ডিফল্ট থিম "light" সেট করে দিলাম
+      themes: ["light"], 
     },
-    // ------------------------------
+    
   }
