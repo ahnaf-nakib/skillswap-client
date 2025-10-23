@@ -63,7 +63,16 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost text-xl">SkillSwap</Link>
+                <Link to="/" className="btn btn-ghost flex items-center gap-2">
+    <img 
+        src="https://cdn-icons-png.flaticon.com/512/4305/4305572.png" 
+        alt="Skill Logo" 
+        className="w-16 h-16" 
+    />
+    <span className="text-xl font-bold text-white">Skill Swap</span>
+</Link>
+
+
             </div>
             
             {/* ডেক্সটপ ভিউ-এর মেনু */}
