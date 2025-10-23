@@ -20,20 +20,20 @@ const MyProfile = () => {
             <h1 className="text-3xl font-bold text-center mb-6 text-white">My Profile</h1>
             <div className="flex flex-col items-center">
                 
-                {/* ইউজার ইমেজ */}
+                
                 <div className="avatar mb-4">
                     <div className="w-24 h-24 rounded-full ring ring-indigo-500 ring-offset-gray-800 ring-offset-2 overflow-hidden">
                         <img src={user.photoURL} alt={user.displayName} className="object-cover w-full h-full" />
                     </div>
                 </div>
                 
-                {/* ইউজার নেম */}
+               
                 <h2 className="text-2xl font-semibold">{user.displayName}</h2>
                 
-                {/* ইউজার ইমেইল */}
+               
                 <p className="text-gray-400 mt-1">{user.email}</p>
 
-                {/* আপডেট প্রোফাইল বাটন */}
+                
                 <Link 
                     to="/update-profile" 
                     className="btn btn-indigo-500 bg-indigo-600 hover:bg-indigo-700 border-0 mt-6 text-white w-full sm:w-auto"

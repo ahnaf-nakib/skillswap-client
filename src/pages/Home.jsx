@@ -3,12 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import SkillCard from '../components/SkillCard';
 
-// Swiper React কম্পোনেন্ট ইম্পোর্ট
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Swiper মডিউল ইম্পোর্ট
+
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-// Swiper স্টাইল ইম্পোর্ট
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -16,9 +16,9 @@ import 'swiper/css/pagination';
 const Home = () => {
     const [skills, setSkills] = useState([]);
 
-    // JSON ডেটা লোড করা
+    
     useEffect(() => {
-        fetch('/skills.json') // public ফোল্ডার থেকে fetch
+        fetch('/skills.json') 
             .then(res => res.json())
             .then(data => setSkills(data));
     }, []);
@@ -33,7 +33,7 @@ const Home = () => {
                 navigation
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                className="mySwiper h-[500px] rounded-lg"
+                className="mySwiper h-[350px] rounded-lg"
             >
                 <SwiperSlide className="relative">
                     <img src="https://www.ensembleschools.com/grace-music/wp-content/uploads/sites/26/2021/03/guitar-lessons-1.jpg" />

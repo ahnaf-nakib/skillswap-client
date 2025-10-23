@@ -15,11 +15,11 @@ const UpdateProfile = () => {
         const name = form.name.value;
         const photoURL = form.photoURL.value;
 
-        // updateUserProfile ফাংশনটি (AuthProvider-এ আছে) কল করা
+       
         updateUserProfile(name, photoURL)
             .then(() => {
                 toast.success("Profile Updated Successfully!");
-                // সফল হলে 'My Profile' পেইজে ফেরত পাঠানো
+                
                 navigate('/my-profile');
             })
             .catch(err => {
@@ -41,7 +41,7 @@ const UpdateProfile = () => {
                         name="name"
                         placeholder="Your Name"
                         className="input input-bordered"
-                        defaultValue={user?.displayName} // বর্তমান নাম দেখানো
+                        defaultValue={user?.displayName} 
                         required
                     />
                 </div>
@@ -56,7 +56,7 @@ const UpdateProfile = () => {
                         name="photoURL"
                         placeholder="Photo URL"
                         className="input input-bordered"
-                        defaultValue={user?.photoURL} // বর্তমান ছবি দেখানো
+                        defaultValue={user?.photoURL} 
                         required
                     />
                 </div>
@@ -68,9 +68,9 @@ const UpdateProfile = () => {
                     </label>
                     <input
                         type="email"
-                        value={user?.email} // বর্তমান ইমেইল
+                        value={user?.email} 
                         className="input input-bordered"
-                        readOnly // ইমেইল পরিবর্তন করতে না দেওয়া
+                        readOnly 
                     />
                 </div>
                 
