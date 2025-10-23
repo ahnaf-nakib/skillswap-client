@@ -1,15 +1,13 @@
-// src/components/Navbar.jsx (UPDATED)
+// src/components/Navbar.jsx (Full Updated Code)
 
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthProvider'; // আমাদের AuthContext হুক
+import { useAuth } from '../contexts/AuthProvider'; 
 import toast from 'react-hot-toast';
 
 const Navbar = () => {
-    // AuthContext থেকে ইউজার এবং লগআউট ফাংশন নিলাম
     const { user, logOut } = useAuth();
 
-    // লগআউট হ্যান্ডলার
     const handleLogout = () => {
         logOut()
             .then(() => {
@@ -20,12 +18,36 @@ const Navbar = () => {
             });
     }
 
-    // Navbar-এর মেনু আইটেমগুলো
+    // স্টাইলিশ নেভিগেশন লিংক
     const navLinks = (
         <>
-            <li><NavLink to="/">Home</NavLink></li>
-            {/* ইউজার লগইন করা থাকলেই শুধু "My Profile" দেখাবে */}
-            {user && <li><NavLink to="/my-profile">My Profile</NavLink></li>}
+            <li>
+                <NavLink 
+                    to="/" 
+                    className={({ isActive }) => 
+                        isActive 
+                            ? "font-bold text-primary border-b-2 border-primary" 
+                            : "font-bold" 
+                    }
+                >
+                    Home
+                </NavLink>
+            </li>
+            
+            {user && (
+                <li>
+                    <NavLink 
+                        to="/my-profile"
+                        className={({ isActive }) => 
+                            isActive 
+                                ? "font-bold text-primary border-b-2 border-primary"
+                                : "font-bold"
+                        }
+                    >
+                        My Profile
+                    </NavLink>
+                </li>
+            )}
         </>
     );
 
@@ -61,7 +83,7 @@ const Navbar = () => {
                                 <div className="w-10 rounded-full" title={user.displayName}>
                                     <img 
                                         alt="User Avatar" 
-                                        src={user.photoURL || "https://i.ibb.co/example.png"} // একটি ডিফল্ট ছবি রাখতে পারো
+                                        src={user.photoURL || "https://i.ibb.co/example.png"} 
                                     />
                                 </div>
                             </label>
@@ -77,8 +99,10 @@ const Navbar = () => {
                             </ul>
                         </div>
                     ) : (
-                        // ইউজার লগইন করা না থাকলে
-                        <Link to="/login" className="btn btn-primary">Login</Link>
+                        // --- লগইন বাটন (আপডেটেড) ---
+                        <Link to="/login" className="btn btn-primary btn-outline">
+                            Login
+                        </Link>
                     )
                 }
             </div>
