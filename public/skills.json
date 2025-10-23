@@ -1,0 +1,74 @@
+[
+    {
+      "skillId": 1,
+      "skillName": "Beginner Guitar Lessons",
+      "providerName": "Alex Martin",
+      "providerEmail": "alex@skillswap.com",
+      "price": 20,
+      "rating": 4.8,
+      "slotsAvailable": 3,
+      "description": "Acoustic guitar classes for complete beginners. Learn chords, strumming, and your first song within a week!",
+      "image": "https://i.ibb.co/b3bXSsB/guitar-lesson.jpg",
+      "category": "Music"
+    },
+    {
+      "skillId": 2,
+      "skillName": "Spoken English Practice",
+      "providerName": "Sara Hossain",
+      "providerEmail": "sara@skillswap.com",
+      "price": 10,
+      "rating": 4.6,
+      "slotsAvailable": 5,
+      "description": "Conversational English sessions for non-native speakers. Improve your fluency and confidence.",
+      "image": "https://i.ibb.co/xL5N11q/spoken-english.jpg",
+      "category": "Language"
+    },
+    {
+      "skillId": 3,
+      "skillName": "React JS Coding Help",
+      "providerName": "David Chen",
+      "providerEmail": "david@skillswap.com",
+      "price": 35,
+      "rating": 4.9,
+      "slotsAvailable": 2,
+      "description": "Need help with your React project? Get 1-on-1 guidance, debugging, and code reviews.",
+      "image": "https://i.ibb.co/d0DFvS3/react-coding.jpg",
+      "category": "Programming"
+    },
+    {
+      "skillId": 4,
+      "skillName": "Yoga & Meditation Basics",
+      "providerName": "Priya Sharma",
+      "providerEmail": "priya@skillswap.com",
+      "price": 15,
+      "rating": 4.7,
+      "slotsAvailable": 10,
+      "description": "Find your inner peace. Morning yoga and meditation sessions for all levels. Focus on breathing and mindfulness.",
+      "image": "https://i.ibb.co/ZJ4dF3y/yoga-meditation.jpg",
+      "category": "Wellness"
+    },
+    {
+      "skillId": 5,
+      "skillName": "Digital Marketing SEO",
+      "providerName": "Mike Thompson",
+      "providerEmail": "mike@skillswap.com",
+      "price": 25,
+      "rating": 4.5,
+      "slotsAvailable": 4,
+      "description": "Learn the fundamentals of Search Engine Optimization (SEO) to rank your website higher on Google.",
+      "image": "https://i.ibb.co/sK6Jp3T/seo-marketing.jpg",
+      "category": "Marketing"
+    },
+    {
+      "skillId": 6,
+      "skillName": "Intermediate French",
+      "providerName": "Chloe Dubois",
+      "providerEmail": "chloe@skillswap.com",
+      "price": 18,
+      "rating": 4.8,
+      "slotsAvailable": 3,
+      "description": "Take your French to the next level. Focus on grammar, vocabulary, and real-life conversation.",
+      "image": "https://i.ibb.co/RzG8T7b/french-lesson.jpg",
+      "category": "Language"
+    }
+  ]
