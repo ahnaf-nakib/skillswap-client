@@ -42,15 +42,14 @@ const Home = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="relative">
-                    <img src="https://skywinitacademy.com/wp-content/uploads/2023/03/Mastrer-in-ReactJS.webp" alt="Coding Help" className="w-full h-full object-cover" />
+                    <img src="https://cdn.vectorstock.com/i/1000v/51/53/reactjs-coding-computer-language-javascript-vector-27015153.jpg" alt="Coding Help" className="w-full h-full object-cover" />
                     <div className="absolute inset-0  bg-opacity-50 flex items-center justify-center">
-                        <h2 className="text-4xl font-bold text-white">Master React JS</h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="relative">
-                    <img src="https://www.shutterstock.com/image-photo/find-your-inner-peace-health-260nw-423586960.jpg" alt="Yoga" className="w-full h-full object-cover" />
+                    <img src="https://eduurban.com/wp-content/uploads/2022/09/Rev_Web_Banner_Edu_Urban_a_Spoken_English_Main_Banner.jpg" alt="Yoga" className="w-full h-full object-cover" />
                     <div className="absolute inset-0  bg-opacity-50 flex items-center justify-center">
-                        <h2 className="text-4xl font-bold text-white">Find Your Inner Peace</h2>
+                        
                     </div>
                 </SwiperSlide>
             </Swiper>
