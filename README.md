@@ -26,7 +26,7 @@ This project implements the following features:
     * Private Routes implemented. [cite_start]Users cannot access "Skill Details" or "My Profile" without being logged in[cite: 77, 122].
 
 * **Modern Design:**
-    * [cite_start]Subtle scroll animations using the AOS package[cite: 16, 143].
+    * [cite_start]Subtle scroll animations using the AOS package.
     * [cite_start]The entire website is fully responsive for mobile, tablet, and desktop devices[cite: 12].
 
 ## 🛠️ NPM Packages Used
